@@ -21,7 +21,7 @@
           public function guardar(){
             $datosNuevosFormulario=array("dignidad_ca"=>$this->input->post('dignidad_ca'),"nombre_ca"=>$this->input->post('nombre_ca'),
                 "apellido_ca"=>$this->input->post('apellido_ca'),"cedula_ca"=>$this->input->post('cedula_ca'),"edad_ca"=>$this->input->post('edad_ca'),"movimiento_ca"=>$this->input->post('movimiento_ca'),
-                "latitud_ca"=>$this->input->post('latitud_ca'),"longitud_ca"=>$this->input->post('longitud_ca'),"op_ca"=>$this->input->post('op_ca')
+                "latitud_ca"=>$this->input->post('latitud_ca'),"longitud_ca"=>$this->input->post('longitud_ca')
               );
               // var_dump($datosNuevosFormulario);
               // return false;

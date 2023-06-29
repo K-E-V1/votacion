@@ -97,18 +97,7 @@
             name="longitud_ca" value=""
             id="longitud_ca" required>
           </div>
-        <div class="col-md-4 text-center">
-          <label for="">Tipo:</label>
-          <br>
-          <select class="form-select" aria-label="Default select example"
-          class="form-control"
-          name="op_ca" value=""
-          id="op_ca">
-            <option selected>Seleccione</option>
-            <option value="DERECHA">DERECHA</option>
-            <option value="IZQUIERDA">IZQUIERDA</option>
-          </select>
-        </div>
+        
       </div>
         <br>
         <div class="row">

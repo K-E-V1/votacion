@@ -21,7 +21,6 @@
         <th>MOVIMIENTO CANDIDATO</th>
         <th>LATITUD</th>
         <th>LONGITUD</th>
-        <th>TIPO</th>
         <th>ACCIONES</th>
       </tr>
     </thead>
@@ -55,9 +54,7 @@
           <td>
             <?php echo $filaTemporal->longitud_ca; ?>
           </td>
-          <td>
-            <?php echo $filaTemporal->op_ca; ?>
-          </td>
+          
           <td class="text-center">
             <a href="<?php echo site_url(); ?>/Form/eliminar/<?php echo $filaTemporal->id_ca; ?>" title="Eliminar Candidato" onclick="return confirm('Estas seguro de eliminar al candidato?');" style="color:red;">
             <i class="bi bi-person-fill-dash"></i>
