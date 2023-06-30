@@ -10,7 +10,7 @@
   <div class="col-md-4 text-center">
     <a href="<?php echo site_url('Form/nuevoC'); ?>" class="btn btn-primary"
       <i class="glyphicon glyphicon-plus"></i>
-      Agregar Candidato
+      Agregar Nuevo Candidato
     </a>
   </div>
 
