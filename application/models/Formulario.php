@@ -57,7 +57,22 @@ class formulario extends CI_Model
     } else {
       return false;
     }
-
   }
+
+      //funcion para consultar un instructor especifico.
+      function obtenerPorId($id_ca){
+          $this->db->where("id_ca",$id_ca);
+          $instructor=$this->db->get("candidato");
+          if($instructor->num_rows()>0) {
+            return $instructor->row();
+          }
+          return false;
+      }
+
+
+      function actualizar($id_ca,$datos){
+      $this->db->where("id_ca" ,$id_ca);
+      return $this->db->update('candidato',$datos);
+    }
 }
  ?>

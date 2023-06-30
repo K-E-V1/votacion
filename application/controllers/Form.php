@@ -41,8 +41,32 @@
                echo "ERROR AL BORRAR :/";
              }
 
+          }
 
- }
-    }//cierre de la clases
 
-?>
+          //function renderizar vista editar con el instructor
+           public function editarC($id_ca){
+               $data["instructorEditar"]=$this->Formulario->obtenerPorId($id_ca);
+               $this->load->view('header');
+               $this->load->view('formularios/editarC',$data);
+               $this->load->view('footer');
+             }
+
+             //Proceso de actualización
+             public function procesarActualizacion(){
+               $datosEditados=array(
+                 "dignidad_ca"=>$this->input->post('dignidad_ca'),"nombre_ca"=>$this->input->post('nombre_ca'),
+                     "apellido_ca"=>$this->input->post('apellido_ca'),"cedula_ca"=>$this->input->post('cedula_ca'),"edad_ca"=>$this->input->post('edad_ca'),"movimiento_ca"=>$this->input->post('movimiento_ca'),
+                     "latitud_ca"=>$this->input->post('latitud_ca'),"longitud_ca"=>$this->input->post('longitud_ca')
+               );
+               $id_ca=$this->input->post("id_ca");
+               if($this->Formulario->actualizar($id_ca,$datosEditados)){
+                 redirect("Form/indexC");
+               }else{
+                 echo "ERROR AL ACTUALIZAR :(";
+               }
+             }
+
+         }//cierre de la clases NOOOOOOOOOOO BORRRAARRRR
+
+     ?>
